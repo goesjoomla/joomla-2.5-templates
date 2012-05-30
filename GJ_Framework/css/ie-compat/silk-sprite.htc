@@ -1,0 +1,38 @@
+<!--
+/**
+ * GoesJoomla CSS framework.
+ *
+ * Declares Javascript fix for Silk icon set sprites (Internet Explorer 6).
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+-->
+
+<public:attach event="ondocumentready" onevent="fixSilkSprite()" />
+<script type="text/javascript">
+	// fix silk-sprite applied to `ul` using the unsupported `li:before` pseudo-element
+	function fixSilkSprite() {
+		var c = (this.className && this.className.match(/\bui-silk\b/)) ? this.className : this.parentNode.className;
+		if (!(c = c.match(/\b(ui-silk-[^\s]+)\b/)))
+			return;
+
+		var fixedFor = this.getAttribute('fixSilkSprite'),
+		requestFor = this.parentNode.nodeName
+		           + (this.parentNode.className ? '.' + this.parentNode.className.replace(/\s+/, '.') : '')
+		           + ' '
+		           + this.nodeName
+		           + (this.className ? '.' + this.className.replace(/\s+/, '.') : '')
+		           ;
+
+		if (fixedFor && fixedFor == requestFor)
+			return;
+		else if (fixedFor)
+			this.innerHTML = this.innerHTML.replace(/<span class="ui-silk ui-silk-[^\s]+"> <\/span>/i, '');
+
+		this.innerHTML = '<span class="ui-silk ' + c[0] + '"> </span>' + this.innerHTML;
+		this.setAttribute('fixSilkSprite', requestFor);
+	}
+</script>

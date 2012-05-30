@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * GoesJoomla template framework.
+ *
+ * Joomla 2.5 template XML manifest file.
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+-->
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>GJ_Framework</name>
+	<creationDate>04 April 2012</creationDate>
+	<author>Manh-Cuong Nguyen</author>
+	<authorEmail>cuongnm@goesjoomla.com</authorEmail>
+	<authorUrl>http://www.goesjoomla.com</authorUrl>
+	<copyright>Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.</copyright>
+	<license>Visit http://www.goesjoomla.com/licenses.html for details</license>
+	<version>1.0</version>
+	<description>TPL_GJ_FRAMEWORK_XML_DESCRIPTION</description>
+
+	<files>
+		<folder>assets</folder>
+		<folder>html</folder>
+		<folder>includes</folder>
+		<folder>language</folder>
+		<folder>layouts</folder>
+
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+	</files>
+
+	<positions>
+		<position>logo</position>
+		<position>personalize</position>
+		<position>menu-left</position>
+		<position>menu-right</position>
+
+		<position>promo-left</position>
+		<position>promo</position>
+		<position>promo-right</position>
+		<position>content-top</position>
+
+		<position>left</position>
+		<position>inner-left</position>
+		<position>breadcrumbs</position>
+		<position>user-top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>main-body-top</position>
+		<position>main-body</position>
+		<position>main-body-bottom</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user-bottom</position>
+		<position>banner</position>
+		<position>inner-right</position>
+		<position>right</position>
+
+		<position>content-bottom</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+
+		<position>footer-left</position>
+		<position>footer-right</position>
+
+		<position>fixed-left-top</position>
+		<position>fixed-left-middle</position>
+		<position>fixed-left-bottom</position>
+		<position>fixed-right-top</position>
+		<position>fixed-right-middle</position>
+		<position>fixed-right-bottom</position>
+
+		<position>debug</position>
+	</positions>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_GJ.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_GJ.sys.ini</language>
+	</languages>
+
+	<config addfieldpath="/templates/GJ_Framework/libraries/joomla/form/fields">
+		<fields name="params">
+			<fieldset name="ABOUT">
+				<field name="gj_about" type="spacer" label="TPL_GJ_ABOUT_TEMPLATE" />
+			</fieldset>
+
+			<fieldset name="DEMO">
+				<field name="gj_demo_full_layout" type="radio" default="0" filter="int"
+					label="TPL_GJ_FIELD_DEMO_FULL_LAYOUT_LABEL" description="TPL_GJ_FIELD_DEMO_FULL_LAYOUT_DESC"
+				>
+					<option value="1">TPL_GJ_OPTION_ENABLE</option>
+					<option value="0">TPL_GJ_OPTION_DISABLE</option>
+				</field>
+
+				<field name="gj_install_sample" type="importsql" file="sample.sql"
+					label="TPL_GJ_FIELD_INSTALL_SAMPLE_LABEL" description="TPL_GJ_FIELD_INSTALL_SAMPLE_DESC" />
+			</fieldset>
+
+			<fieldset name="LOGO">
+				<field name="gj_logo" type="text" default="templates/GJ_Framework/images/logo.png" filter="string"
+					label="TPL_GJ_FIELD_LOGO_LABEL" description="TPL_GJ_FIELD_LOGO_DESC" />
+
+				<field name="gj_logo_title" type="text" default="" filter="string"
+					label="TPL_GJ_FIELD_LOGO_TITLE_LABEL" description="TPL_GJ_FIELD_LOGO_TITLE_DESC" />
+
+				<field name="gj_logo_slogan" type="text" default="" filter="string"
+					label="TPL_GJ_FIELD_LOGO_SLOGAN_LABEL" description="TPL_GJ_FIELD_LOGO_SLOGAN_DESC" />
+
+				<field name="gj_logo_inject" type="list" default="if-empty" filter="word"
+					label="TPL_GJ_FIELD_LOGO_INJECT_LABEL" description="TPL_GJ_FIELD_LOGO_INJECT_DESC"
+				>
+					<option value="if-empty">TPL_GJ_INJECT_OPTION_IF_EMPTY</option>
+					<option value="prepend-if-not-empty">TPL_GJ_INJECT_OPTION_PREPEND_IF_NOT_EMPTY</option>
+					<option value="append-if-not-empty">TPL_GJ_INJECT_OPTION_APPEND_IF_NOT_EMPTY</option>
+					<option value="always-prepend">TPL_GJ_INJECT_OPTION_ALWAYS_PREPEND</option>
+					<option value="always-append">TPL_GJ_INJECT_OPTION_ALWAYS_APPEND</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="TYPOGRAPHY">
+				<field name="gj_typography_text_style" type="list" default="business" filter="word"
+					label="TPL_GJ_FIELD_TYPOGRAPHY_TEXT_STYLE_LABEL" description="TPL_GJ_FIELD_TYPOGRAPHY_TEXT_STYLE_DESC"
+				>
+					<option value="business">TPL_GJ_TEXT_STYLE_OPTION_BUSINESS</option>
+					<option value="personal">TPL_GJ_TEXT_STYLE_OPTION_PERSONAL</option>
+					<option value="news">TPL_GJ_TEXT_STYLE_OPTION_NEWS</option>
+				</field>
+
+				<field name="gj_typography_text_size" type="list" default="small" filter="word"
+					label="TPL_GJ_FIELD_TYPOGRAPHY_TEXT_SIZE_LABEL" description="TPL_GJ_FIELD_TYPOGRAPHY_TEXT_SIZE_DESC"
+				>
+					<option value="x-small">TPL_GJ_TEXT_SIZE_OPTION_EXTRA_SMALL</option>
+					<option value="small">TPL_GJ_TEXT_SIZE_OPTION_SMALL</option>
+					<option value="medium">TPL_GJ_TEXT_SIZE_OPTION_MEDIUM</option>
+					<option value="large">TPL_GJ_TEXT_SIZE_OPTION_LARGE</option>
+					<option value="x-large">TPL_GJ_TEXT_SIZE_OPTION_EXTRA_LARGE</option>
+				</field>
+
+				<field name="gj_typography_line_height" type="text" default="1.5" filter="float"
+					label="TPL_GJ_FIELD_TYPOGRAPHY_LINE_HEIGHT_LABEL" description="TPL_GJ_FIELD_TYPOGRAPHY_LINE_HEIGHT_DESC" />
+			</fieldset>
+
+			<fieldset name="DESKTOP_LAYOUT">
+				<field name="gj_desktop_theme" type="filelist" directory="templates/GJ_Framework/layouts/desktop"
+					filter="\.php$" exclude="default.php" stripext="1" hide_none="1"
+					label="TPL_GJ_FIELD_DESKTOP_THEME_LABEL" description="TPL_GJ_FIELD_DESKTOP_THEME_DESC" />
+
+				<field name="gj_desktop_width" type="list" default="narrow" filter="word"
+					label="TPL_GJ_FIELD_DESKTOP_WIDTH_LABEL" description="TPL_GJ_FIELD_DESKTOP_WIDTH_DESC"
+				>
+					<option value="narrow">TPL_GJ_WIDTH_OPTION_NARROW</option>
+					<option value="wide">TPL_GJ_WIDTH_OPTION_WIDE</option>
+					<option value="fluid">TPL_GJ_WIDTH_OPTION_FLUID</option>
+				</field>
+
+				<field name="gj_desktop_width_narrow" type="text" default="960" filter="int"
+					label="TPL_GJ_FIELD_DESKTOP_WIDTH_NARROW_LABEL" description="TPL_GJ_FIELD_DESKTOP_WIDTH_NARROW_DESC" />
+
+				<field name="gj_desktop_width_wide" type="text" default="1150" filter="int"
+					label="TPL_GJ_FIELD_DESKTOP_WIDTH_WIDE_LABEL" description="TPL_GJ_FIELD_DESKTOP_WIDTH_WIDE_DESC" />
+
+				<field name="gj_desktop_width_fluid" type="text" default="90" filter="float"
+					label="TPL_GJ_FIELD_DESKTOP_WIDTH_FLUID_LABEL" description="TPL_GJ_FIELD_DESKTOP_WIDTH_FLUID_DESC" />
+
+				<field name="gj_desktop_promo_left_width" type="text" default="23" filter="float"
+					label="TPL_GJ_FIELD_DESKTOP_PROMO_LEFT_WIDTH_LABEL" description="TPL_GJ_FIELD_DESKTOP_PROMO_LEFT_WIDTH_DESC" />
+
+				<field name="gj_desktop_promo_right_width" type="text" default="23" filter="float"
+					label="TPL_GJ_FIELD_DESKTOP_PROMO_RIGHT_WIDTH_LABEL" description="TPL_GJ_FIELD_DESKTOP_PROMO_RIGHT_WIDTH_DESC" />
+
+				<field name="gj_desktop_left_col_width" type="text" default="23" filter="float"
+					label="TPL_GJ_FIELD_DESKTOP_LEFT_COLUMN_WIDTH_LABEL" description="TPL_GJ_FIELD_DESKTOP_LEFT_COLUMN_WIDTH_DESC" />
+
+				<field name="gj_desktop_right_col_width" type="text" default="23" filter="float"
+					label="TPL_GJ_FIELD_DESKTOP_RIGHT_COLUMN_WIDTH_LABEL" description="TPL_GJ_FIELD_DESKTOP_RIGHT_COLUMN_WIDTH_DESC" />
+
+				<field name="gj_desktop_inner_left_width" type="text" default="23" filter="float"
+					label="TPL_GJ_FIELD_DESKTOP_INNER_LEFT_WIDTH_LABEL" description="TPL_GJ_FIELD_DESKTOP_INNER_LEFT_WIDTH_DESC" />
+
+				<field name="gj_desktop_inner_right_width" type="text" default="23" filter="float"
+					label="TPL_GJ_FIELD_DESKTOP_INNER_RIGHT_WIDTH_LABEL" description="TPL_GJ_FIELD_DESKTOP_INNER_RIGHT_WIDTH_DESC" />
+
+				<field name="gj_desktop_component_mapping" type="moduleposition" default="main-body" maxlength="50"
+					label="TPL_GJ_FIELD_DESKTOP_COMPONENT_MAPPING_LABEL" description="TPL_GJ_FIELD_DESKTOP_COMPONENT_MAPPING_DESC" />
+
+				<field name="gj_desktop_component_inject" type="list" default="if-empty" filter="word"
+					label="TPL_GJ_FIELD_DESKTOP_COMPONENT_INJECT_LABEL" description="TPL_GJ_FIELD_DESKTOP_COMPONENT_INJECT_DESC"
+				>
+					<option value="if-empty">TPL_GJ_INJECT_OPTION_IF_EMPTY</option>
+					<option value="prepend-if-not-empty">TPL_GJ_INJECT_OPTION_PREPEND_IF_NOT_EMPTY</option>
+					<option value="append-if-not-empty">TPL_GJ_INJECT_OPTION_APPEND_IF_NOT_EMPTY</option>
+					<option value="always-prepend">TPL_GJ_INJECT_OPTION_ALWAYS_PREPEND</option>
+					<option value="always-append">TPL_GJ_INJECT_OPTION_ALWAYS_APPEND</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="PERSONALIZATION">
+				<field name="gj_personalize" type="radio" default="1" filter="int"
+					label="TPL_GJ_FIELD_PERSONALIZE_LABEL" description="TPL_GJ_FIELD_PERSONALIZE_DESC"
+				>
+					<option value="1">TPL_GJ_OPTION_ENABLE</option>
+					<option value="0">TPL_GJ_OPTION_DISABLE</option>
+				</field>
+
+				<field name="gj_personalize_font_resizer" type="radio" default="1" filter="int"
+					label="TPL_GJ_FIELD_PERSONALIZE_FONT_RESIZER_LABEL" description="TPL_GJ_FIELD_PERSONALIZE_FONT_RESIZER_DESC"
+				>
+					<option value="1">TPL_GJ_OPTION_ENABLE</option>
+					<option value="0">TPL_GJ_OPTION_DISABLE</option>
+				</field>
+
+				<field name="gj_personalize_width_switcher" type="radio" default="1" filter="int"
+					label="TPL_GJ_FIELD_PERSONALIZE_WIDTH_SWITCHER_LABEL" description="TPL_GJ_FIELD_PERSONALIZE_WIDTH_SWITCHER_DESC"
+				>
+					<option value="1">TPL_GJ_OPTION_ENABLE</option>
+					<option value="0">TPL_GJ_OPTION_DISABLE</option>
+				</field>
+
+				<field name="gj_personalize_theme_switcher" type="radio" default="1" filter="int"
+					label="TPL_GJ_FIELD_PERSONALIZE_THEME_SWITCHER_LABEL" description="TPL_GJ_FIELD_PERSONALIZE_THEME_SWITCHER_DESC"
+				>
+					<option value="1">TPL_GJ_OPTION_ENABLE</option>
+					<option value="0">TPL_GJ_OPTION_DISABLE</option>
+				</field>
+
+				<field name="gj_personalize_layout_switcher" type="radio" default="1" filter="int"
+					label="TPL_GJ_FIELD_PERSONALIZE_LAYOUT_SWITCHER_LABEL" description="TPL_GJ_FIELD_PERSONALIZE_LAYOUT_SWITCHER_DESC"
+				>
+					<option value="1">TPL_GJ_OPTION_ENABLE</option>
+					<option value="0">TPL_GJ_OPTION_DISABLE</option>
+				</field>
+
+				<field name="gj_personalize_inject" type="list" default="if-empty" filter="word"
+					label="TPL_GJ_FIELD_PERSONALIZE_INJECT_LABEL" description="TPL_GJ_FIELD_PERSONALIZE_INJECT_DESC"
+				>
+					<option value="if-empty">TPL_GJ_INJECT_OPTION_IF_EMPTY</option>
+					<option value="prepend-if-not-empty">TPL_GJ_INJECT_OPTION_PREPEND_IF_NOT_EMPTY</option>
+					<option value="append-if-not-empty">TPL_GJ_INJECT_OPTION_APPEND_IF_NOT_EMPTY</option>
+					<option value="always-prepend">TPL_GJ_INJECT_OPTION_ALWAYS_PREPEND</option>
+					<option value="always-append">TPL_GJ_INJECT_OPTION_ALWAYS_APPEND</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

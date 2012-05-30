@@ -1,0 +1,126 @@
+/**
+ * GoesJoomla template framework.
+ *
+ * Declares full layout demo style for desktop layout's default theme.
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+.gj-full-layout-preview .gj-container {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border: 2px solid #BD9ECD;
+
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+}
+.gj-full-layout-preview #gj-system-message {
+	margin: 0 auto;
+	border: 0;
+
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+}
+
+.gj-position-preview {
+	position: relative;
+	margin: 6px;
+	border: 1px solid #EBECA1;
+	padding: 11px;
+
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+
+	-webkit-box-shadow: 1px 1px 3px #ccc;
+	   -moz-box-shadow: 1px 1px 3px #ccc;
+	        box-shadow: 1px 1px 3px #ccc;
+
+	background-color: #FEFFC1;
+}
+#gj-fixed-left-top-pos .gj-position-preview,
+#gj-fixed-left-middle-pos .gj-position-preview,
+#gj-fixed-left-bottom-pos .gj-position-preview,
+#gj-fixed-right-top-pos .gj-position-preview,
+#gj-fixed-right-middle-pos .gj-position-preview,
+#gj-fixed-right-bottom-pos .gj-position-preview {
+	margin: 0;
+	border: 0;
+	padding: 0;
+
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+	        border-radius: 0;
+
+	-webkit-box-shadow: 0 0 0 transparent;
+	   -moz-box-shadow: 0 0 0 transparent;
+	        box-shadow: 0 0 0 transparent;
+
+	background-color: transparent;
+}
+
+.gj-position-preview .gj-overlay {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	-webkit-border-radius: inherit;
+	   -moz-border-radius: inherit;
+	        border-radius: inherit;
+}
+.gj-position-preview:hover .gj-overlay {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	    filter: alpha(opacity=75);
+	   opacity: 0.75;
+
+	background-color: #FFF;
+}
+
+.gj-position-preview .gj-position-name {
+	position: relative;
+}
+.gj-position-preview span.gj-position-name {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 0.5em;
+
+	-webkit-border-radius: 6px 0;
+	   -moz-border-radius: 6px 0;
+	        border-radius: 6px 0;
+
+	background-color: #EBECA1;
+	font-weight: bold;
+	line-height: 22px;
+}
+
+.gj-position-preview a.close-button {
+	display: none;
+}
+.gj-position-preview:hover a.close-button {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 0.5em;
+
+	-webkit-border-radius: 0 6px;
+	   -moz-border-radius: 0 6px;
+	        border-radius: 0 6px;
+
+	background-color: #EBECA1;
+	color: inherit;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 22px;
+	text-decoration: none;
+}

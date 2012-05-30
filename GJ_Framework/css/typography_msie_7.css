@@ -1,0 +1,71 @@
+/**
+ * GoesJoomla CSS framework.
+ *
+ * Declares typography style rules (Internet Explorer 7).
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+/* Basic HTML
+-----------------------------------------------------------------------------------------------*/
+
+hr {
+	margin: -7px 0 10px;
+	height: 0;
+}
+
+/* Lists
+-----------------------------------------------------------------------------------------------*/
+
+/* all lists */
+ul, ol {
+	padding-left: 0.5em;
+}
+
+/* unordered list without bullet */
+ul.no-bullet {
+	padding-left: 0;
+}
+
+/* inline unordered list */
+ul.inline {
+	padding-left: 0;
+}
+* html ul.inline li { /* IE6 only */
+	margin-left: expression(this.previousSibling ? this.currentStyle.marginLeft : 0);
+}
+
+/* inline definition list */
+dl.inline dt:after {
+	/* reset for IE7 */
+	padding-right: 0;
+}
+dl.inline dt {
+	behavior: expression(this.getAttribute('__fixed__') ? 'none' : ((this.innerHTML = this.innerHTML + '<span class="auto-append">: </span>') && this.setAttribute('__fixed__', 1)));
+}
+dl.inline dt .auto-append {
+	padding-right: 0.5em;
+}
+dl.inline dd {
+	float: none;
+}
+
+/* Reference
+-----------------------------------------------------------------------------------------------*/
+
+blockquote {
+	padding-bottom: 0;
+}
+blockquote cite:before {
+	/* reset for IE7 */
+	margin-left: 0;
+}
+blockquote cite {
+	behavior: expression(this.getAttribute('__fixed__') ? 'none' : ((this.innerHTML = '<span class="auto-prepend">— </span>' + this.innerHTML) && this.setAttribute('__fixed__', 1)));
+}
+blockquote cite .auto-prepend {
+	margin-left: 1em;
+}

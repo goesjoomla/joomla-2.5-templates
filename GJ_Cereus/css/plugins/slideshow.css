@@ -1,0 +1,54 @@
+/**
+ * GoesJoomla CSS framework.
+ *
+ * Declares style rules for slideshow.
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+.liquidus-slideshow {
+	position: relative;
+}
+.liquidus-slideshow .slide {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+}
+.liquidus-slideshow .slide-active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.liquidus-slideshow ul.control-panel {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 99;
+	text-align: center;
+}
+.liquidus-slideshow ul.control-panel .button {
+	display: inline-block;
+	margin: 0 6px;
+	padding: 0 6px;
+	cursor: pointer;
+}
+
+.liquidus-slideshow ol.index-panel {
+	margin: 0;
+	text-align: center;
+}
+.liquidus-slideshow ol.index-panel .index {
+	display: inline-block;
+	margin: 9px 12px;
+	cursor: pointer;
+}
+.liquidus-slideshow ol.index-panel .index-active {
+	cursor: default;
+	font-weight: bold;
+}

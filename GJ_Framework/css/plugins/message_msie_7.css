@@ -1,0 +1,30 @@
+/**
+ * GoesJoomla CSS framework.
+ *
+ * Declares message style rules (Internet Explorer 7).
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+/* Message Boxes
+-----------------------------------------------------------------------------------------------*/
+
+.error, .alert, .notice, .success, .info {
+	margin-top: 0 !important;
+	margin-bottom: 1em !important;
+}
+
+ul.error, ul.alert, ul.notice, ul.success, ul.info,
+ol.error, ol.alert, ol.notice, ol.success, ol.info {
+	padding-left: 1.25em;
+}
+ul.error.ui-silk, ul.alert.ui-silk, ul.notice.ui-silk, ul.success.ui-silk, ul.info.ui-silk {
+	padding-left: 0.75em;
+}
+
+* html ul.error, * html ul.alert, * html ul.notice, * html ul.success, * html ul.info { /* IE6 */
+	padding-left: expression(this.className.indexOf('ui-silk') > -1 ? '.75em' : this.currentStyle.paddingLeft);
+}

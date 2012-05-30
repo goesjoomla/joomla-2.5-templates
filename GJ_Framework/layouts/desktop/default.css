@@ -1,0 +1,223 @@
+/**
+ * GoesJoomla template framework.
+ *
+ * Declares common styles for desktop layout's default theme.
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+/**
+ * Text Styles
+ */
+body.gj-business-text-style {
+	font-family: Arial, Helvetica, sans-serif;
+}
+body.gj-business-text-style h1,
+body.gj-business-text-style h2,
+body.gj-business-text-style h3,
+body.gj-business-text-style h4,
+body.gj-business-text-style h5,
+body.gj-business-text-style h6,
+body.gj-business-text-style ul.menu-mainmenu li,
+body.gj-business-text-style span.breadcrumbs,
+body.gj-business-text-style .componentheading,
+body.gj-business-text-style .contentheading,
+body.gj-business-text-style #gj-go-to-top {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+body.gj-personal-text-style {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+body.gj-personal-text-style h1,
+body.gj-personal-text-style h2,
+body.gj-personal-text-style h3,
+body.gj-personal-text-style h4,
+body.gj-personal-text-style h5,
+body.gj-personal-text-style h6,
+body.gj-personal-text-style ul.menu-mainmenu li,
+body.gj-personal-text-style span.breadcrumbs,
+body.gj-personal-text-style .componentheading,
+body.gj-personal-text-style .contentheading,
+body.gj-personal-text-style #gj-go-to-top {
+	font-family: Georgia, serif;
+}
+
+body.gj-news-text-style {
+	font-family: "Times New Roman", Times, serif;
+}
+body.gj-news-text-style h1,
+body.gj-news-text-style h2,
+body.gj-news-text-style h3,
+body.gj-news-text-style h4,
+body.gj-news-text-style h5,
+body.gj-news-text-style h6,
+body.gj-news-text-style ul.menu-mainmenu li,
+body.gj-news-text-style span.breadcrumbs,
+body.gj-news-text-style .componentheading,
+body.gj-news-text-style .contentheading,
+body.gj-news-text-style #gj-go-to-top {
+	font-family: "Palatino Linotype", Palatino, serif;
+}
+
+/**
+ * Containers
+ */
+.gj-container {
+	margin: 0 auto;
+}
+
+.gj-spread-width-column {
+	width: 100%;
+}
+.gj-half-width-column {
+	width: 50%;
+}
+
+/**
+ * Blocks
+ */
+#gj-menu-ground {
+	clear: both;
+}
+
+/**
+ * Columns
+ */
+#gj-left-pos,
+#gj-center-ground,
+#gj-inner-left-pos,
+#gj-body-ground {
+	position: relative;
+}
+
+/**
+ * Fixed Positions
+ */
+#gj-fixed-left-top-pos,
+#gj-fixed-left-middle-pos,
+#gj-fixed-left-bottom-pos,
+#gj-fixed-right-top-pos,
+#gj-fixed-right-middle-pos,
+#gj-fixed-right-bottom-pos {
+	position: fixed;
+}
+
+#gj-fixed-right-top-pos,
+#gj-fixed-right-middle-pos,
+#gj-fixed-right-bottom-pos {
+	right: 0;
+}
+
+#gj-fixed-left-top-pos,
+#gj-fixed-right-top-pos {
+	top: 0;
+}
+#gj-fixed-left-middle-pos,
+#gj-fixed-right-middle-pos {
+	top: 50%;
+}
+#gj-fixed-left-bottom-pos,
+#gj-fixed-right-bottom-pos {
+	bottom: 0;
+}
+
+#gj-fixed img {
+	vertical-align: bottom;
+}
+
+.gj-has-message #gj-fixed-left-top-pos,
+.gj-has-message #gj-fixed-right-top-pos {
+	top: 19px;
+}
+
+/**
+ * System Message
+ */
+#gj-system-message-ground {
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid #C0E098;
+
+	-webkit-box-shadow: 0 1px 2px #ccc;
+	   -moz-box-shadow: 0 1px 2px #ccc;
+	        box-shadow: 0 1px 2px #ccc;
+
+	width: 100%;
+	height: 18px;
+	z-index: 999;
+	background-color: #D7F1B7;
+}
+#gj-system-message-ground.open {
+	height: auto;
+}
+#gj-system-message-ground.close {
+	margin-bottom: 0;
+
+	-webkit-box-shadow: 0 0 0 transparent;
+	   -moz-box-shadow: 0 0 0 transparent;
+	        box-shadow: 0 0 0 transparent;
+
+	height: 0;
+}
+
+#gj-system-message {
+	position: relative;
+	height: inherit;
+}
+#gj-system-message-inner {
+	height: inherit;
+	overflow: hidden;
+}
+
+#gj-system-message-button-ground {
+	position: absolute;
+	right: 0;
+	margin-top: -1px;
+	border-top: 1px solid #D7F1B7;
+	z-index: 9;
+}
+#gj-system-message-button {
+	border: 1px solid #C0E098;
+	border-top: 0;
+
+	-webkit-border-radius: 0 0 6px 6px;
+	   -moz-border-radius: 0 0 6px 6px;
+	        border-radius: 0 0 6px 6px;
+
+	-webkit-box-shadow: 1px 1px 1px #ccc;
+	   -moz-box-shadow: 1px 1px 1px #ccc;
+	        box-shadow: 1px 1px 1px #ccc;
+
+	padding: 3px 6px;
+	background-color: #D7F1B7;
+}
+#gj-system-message-button a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/**
+ * Go To Top Link
+ */
+#gj-go-to-top {
+	position: fixed;
+	bottom: -29px;
+	opacity: 0;
+	color: inherit;
+	text-decoration: none;
+}
+#gj-go-to-top.visible {
+	bottom: 0;
+	opacity: 1;
+}
+#gj-go-to-top span {
+	display: block;
+	border: 1px solid #C0E098;
+	border-bottom: 0;
+	padding: 5px;
+	background-color: #E0F5C6;
+}

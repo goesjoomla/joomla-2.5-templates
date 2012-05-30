@@ -1,0 +1,83 @@
+/**
+ * GoesJoomla CSS framework.
+ *
+ * Declares style rules for common semantic markup tags.
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+/* Custom Styles for Semantic Markups
+-----------------------------------------------------------------------------------------------*/
+
+/* < table > */
+table.colored-borders {
+	margin-bottom: 17px;
+	border: 1px solid #bbb;
+	width: 100%;
+}
+table.colored-borders th, table.colored-borders td {
+	border-bottom: 1px solid #bbb;
+	padding: 8px 1em 9px;
+	background-color: #eee;
+	text-align: left;
+}
+table.colored-borders thead th {
+	border-bottom: 1px solid #888;
+	background-color: #bbb;
+}
+table.colored-borders thead tr.table-head th, table.colored-borders thead tr.table-head td {
+	border: 1px solid #555;
+	background-color: #555;
+	color: #fff;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+table.colored-borders tbody tr.odd th, table.colored-borders tbody tr.odd td {
+	background-color: #fff;
+}
+table.colored-borders tfoot th, table.colored-borders tfoot td {
+	border-top: 2px solid #666;
+	padding-bottom: 8px;
+	background-color: #eee;
+	font-style: normal;
+}
+table.colored-borders tfoot tr.table-foot th, table.colored-borders tfoot tr.table-foot td {
+	border: 1px solid #bbb;
+	padding-bottom: 9px;
+	background-color: #bbb;
+}
+/* < / table > */
+
+/* < reference > */
+blockquote.big-quote-marks {
+	margin-left: 3em;
+	margin-right: 3em;
+	border: 0;
+	padding: 0;
+	font-style: italic;
+	text-align: justify;
+}
+blockquote.big-quote-marks p {
+	padding: 0;
+}
+blockquote.big-quote-marks p:before {
+	padding-right: 0.1em;
+	content: "“";
+	font-family: Times, "Times New Roman", serif;
+	font-size: 3em;
+	vertical-align: bottom;
+}
+blockquote.big-quote-marks p:after {
+	padding-left: 0.1em;
+	content: "”";
+	font-family: Times, "Times New Roman", serif;
+	font-size: 3em;
+	vertical-align: top;
+}
+blockquote.big-quote-marks cite {
+	font-style: normal;
+}
+/* < / reference > */

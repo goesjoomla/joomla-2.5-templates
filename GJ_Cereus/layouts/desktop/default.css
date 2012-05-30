@@ -1,0 +1,288 @@
+/**
+ * GoesJoomla template framework.
+ *
+ * Declares common styles for desktop layout's default theme.
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+/**
+ * Text Styles
+ */
+body.gj-business-text-style {
+	font-family: Arial, Helvetica, sans-serif;
+}
+body.gj-business-text-style h1,
+body.gj-business-text-style h2,
+body.gj-business-text-style h3,
+body.gj-business-text-style h4,
+body.gj-business-text-style h5,
+body.gj-business-text-style h6,
+body.gj-business-text-style ul.menu-mainmenu li,
+body.gj-business-text-style span.breadcrumbs,
+body.gj-business-text-style .componentheading,
+body.gj-business-text-style .contentheading,
+body.gj-business-text-style #gj-go-to-top {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+body.gj-personal-text-style {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+body.gj-personal-text-style h1,
+body.gj-personal-text-style h2,
+body.gj-personal-text-style h3,
+body.gj-personal-text-style h4,
+body.gj-personal-text-style h5,
+body.gj-personal-text-style h6,
+body.gj-personal-text-style ul.menu-mainmenu li,
+body.gj-personal-text-style span.breadcrumbs,
+body.gj-personal-text-style .componentheading,
+body.gj-personal-text-style .contentheading,
+body.gj-personal-text-style #gj-go-to-top {
+	font-family: Georgia, serif;
+}
+
+body.gj-news-text-style {
+	font-family: "Times New Roman", Times, serif;
+}
+body.gj-news-text-style h1,
+body.gj-news-text-style h2,
+body.gj-news-text-style h3,
+body.gj-news-text-style h4,
+body.gj-news-text-style h5,
+body.gj-news-text-style h6,
+body.gj-news-text-style ul.menu-mainmenu li,
+body.gj-news-text-style span.breadcrumbs,
+body.gj-news-text-style .componentheading,
+body.gj-news-text-style .contentheading,
+body.gj-news-text-style #gj-go-to-top {
+	font-family: "Palatino Linotype", Palatino, serif;
+}
+
+/**
+ * Containers
+ */
+.gj-container {
+	margin: 0 auto;
+}
+
+.gj-spread-width-column {
+	width: 100%;
+}
+.gj-half-width-column {
+	width: 50%;
+}
+
+/**
+ * Blocks
+ */
+#gj-page {
+	background-color: #d4d3cf;
+}
+
+#gj-header-ground {
+	background: #393a35; /* Old browsers */
+	background: -moz-linear-gradient(top,  #393a35 0%, #393a35 9%, #3f403a 28%, #5b5d52 86%, #5c5e53 91%, #55574c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#393a35), color-stop(9%,#393a35), color-stop(28%,#3f403a), color-stop(86%,#5b5d52), color-stop(91%,#5c5e53), color-stop(100%,#55574c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #393a35 0%,#393a35 9%,#3f403a 28%,#5b5d52 86%,#5c5e53 91%,#55574c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #393a35 0%,#393a35 9%,#3f403a 28%,#5b5d52 86%,#5c5e53 91%,#55574c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #393a35 0%,#393a35 9%,#3f403a 28%,#5b5d52 86%,#5c5e53 91%,#55574c 100%); /* IE10+ */
+	background: linear-gradient(top,  #393a35 0%,#393a35 9%,#3f403a 28%,#5b5d52 86%,#5c5e53 91%,#55574c 100%); /* W3C */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#393a35', endColorstr='#55574c',GradientType=0 ); /* IE6-9 */
+}
+#gj-header {
+	position: relative;
+	color: #e8e8e8;
+}
+
+#gj-menu-ground {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#gj-content-bottom-ground {
+	background: #242424; /* Old browsers */
+	background: -moz-linear-gradient(top,  #242424 0%, #252525 2%, #2e2e2e 6%, #2f2f2f 8%, #252525 21%, #0e0e0e 44%, #020202 60%, #000000 64%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#242424), color-stop(2%,#252525), color-stop(6%,#2e2e2e), color-stop(8%,#2f2f2f), color-stop(21%,#252525), color-stop(44%,#0e0e0e), color-stop(60%,#020202), color-stop(64%,#000000), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #242424 0%,#252525 2%,#2e2e2e 6%,#2f2f2f 8%,#252525 21%,#0e0e0e 44%,#020202 60%,#000000 64%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #242424 0%,#252525 2%,#2e2e2e 6%,#2f2f2f 8%,#252525 21%,#0e0e0e 44%,#020202 60%,#000000 64%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #242424 0%,#252525 2%,#2e2e2e 6%,#2f2f2f 8%,#252525 21%,#0e0e0e 44%,#020202 60%,#000000 64%,#000000 100%); /* IE10+ */
+	background: linear-gradient(top,  #242424 0%,#252525 2%,#2e2e2e 6%,#2f2f2f 8%,#252525 21%,#0e0e0e 44%,#020202 60%,#000000 64%,#000000 100%); /* W3C */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+#gj-footer-ground {
+	background: #d4d3cf; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d4d3cf 0%, #d8d7d4 14%, #fbfbfa 84%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4d3cf), color-stop(14%,#d8d7d4), color-stop(84%,#fbfbfa), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d4d3cf 0%,#d8d7d4 14%,#fbfbfa 84%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d4d3cf 0%,#d8d7d4 14%,#fbfbfa 84%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d4d3cf 0%,#d8d7d4 14%,#fbfbfa 84%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(top,  #d4d3cf 0%,#d8d7d4 14%,#fbfbfa 84%,#ffffff 100%); /* W3C */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4d3cf', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+#gj-debug-ground {
+	background-color: #fff;
+}
+
+/**
+ * Columns
+ */
+#gj-logo-pos,
+#gj-menu-left-pos {
+	text-align: center;
+}
+#gj-personalize-pos,
+#gj-menu-right-pos {
+	text-align: right;
+}
+#gj-menu-left-pos,	
+#gj-left-pos,
+#gj-center-ground,
+#gj-inner-left-pos,
+#gj-body-ground {
+	position: relative;
+}
+
+/**
+ * Fixed Positions
+ */
+#gj-fixed-left-top-pos,
+#gj-fixed-left-middle-pos,
+#gj-fixed-left-bottom-pos,
+#gj-fixed-right-top-pos,
+#gj-fixed-right-middle-pos,
+#gj-fixed-right-bottom-pos {
+	position: fixed;
+}
+
+#gj-fixed-right-top-pos,
+#gj-fixed-right-middle-pos,
+#gj-fixed-right-bottom-pos {
+	right: 0;
+}
+
+#gj-fixed-left-top-pos,
+#gj-fixed-right-top-pos {
+	top: 0;
+}
+#gj-fixed-left-middle-pos,
+#gj-fixed-right-middle-pos {
+	top: 50%;
+}
+#gj-fixed-left-bottom-pos,
+#gj-fixed-right-bottom-pos {
+	bottom: 0;
+}
+
+#gj-fixed img {
+	vertical-align: bottom;
+}
+
+.gj-has-message #gj-fixed-left-top-pos,
+.gj-has-message #gj-fixed-right-top-pos {
+	top: 19px;
+}
+
+/**
+ * System Message
+ */
+#gj-system-message-ground {
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid #C0E098;
+
+	-webkit-box-shadow: 0 1px 2px #666;
+	   -moz-box-shadow: 0 1px 2px #666;
+	        box-shadow: 0 1px 2px #666;
+
+	width: 100%;
+	height: 18px;
+	z-index: 999;
+	background-color: #D7F1B7;
+}
+#gj-system-message-ground.open {
+	height: auto;
+}
+#gj-system-message-ground.close {
+	margin-bottom: 0;
+
+	-webkit-box-shadow: 0 0 0 transparent;
+	   -moz-box-shadow: 0 0 0 transparent;
+	        box-shadow: 0 0 0 transparent;
+
+	height: 0;
+}
+
+#gj-system-message {
+	position: relative;
+	height: inherit;
+}
+#gj-system-message-inner {
+	height: inherit;
+	overflow: hidden;
+}
+
+#gj-system-message-button-ground {
+	position: absolute;
+	right: 0;
+	margin-top: -1px;
+	border-top: 1px solid #D7F1B7;
+	z-index: 9;
+}
+#gj-system-message-button {
+	border: 1px solid #C0E098;
+	border-top: 0;
+
+	-webkit-border-radius: 0 0 6px 6px;
+	   -moz-border-radius: 0 0 6px 6px;
+	        border-radius: 0 0 6px 6px;
+
+	-webkit-box-shadow: 1px 1px 1px #666;
+	   -moz-box-shadow: 1px 1px 1px #666;
+	        box-shadow: 1px 1px 1px #666;
+
+	padding: 3px 6px;
+	background-color: #D7F1B7;
+}
+#gj-system-message-button a {
+	color: inherit;
+	text-decoration: none;
+}
+
+/**
+ * Go To Top Link
+ */
+#gj-go-to-top {
+	position: fixed;
+	bottom: -29px;
+	opacity: 0;
+	color: inherit;
+	text-decoration: none;
+}
+#gj-go-to-top.visible {
+	bottom: 0;
+	opacity: 1;
+}
+#gj-go-to-top span {
+	display: block;
+	border: 1px solid #C0E098;
+	border-bottom: 0;
+	padding: 5px;
+	background-color: #E0F5C6;
+}
+
+/**
+ * Keep full layout demo but remove highlighting
+ */
+.gj-position-preview .gj-overlay,
+.gj-position-preview span.gj-position-name,
+.gj-position-preview a.close-button {
+	display: none !important;
+}

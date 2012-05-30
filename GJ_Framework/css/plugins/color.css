@@ -1,0 +1,56 @@
+/**
+ * GoesJoomla CSS framework.
+ *
+ * Declares colorization style rules.
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+/* Colorization Classes
+-----------------------------------------------------------------------------------------------*/
+
+.water {
+	color: #5582d1;
+}
+.earth {
+	color: #4e3e2c;
+}
+.air {
+	color: #f1fff7;
+}
+.fire {
+	color: #ff8a19;
+}
+.wine {
+	color: #4a040a;
+}
+.beer {
+	color: #f0c030;
+}
+.caffe {
+	color:#473523;
+}
+.caffe-cream {
+	color: #b68d3d;
+}
+.espresso {
+	color: #2c1901;
+}
+.caramel {
+	color: #ab671f;
+}
+.chocolate {
+	color: #290200;
+}
+.black-pepper {
+	color: #444334;
+}
+.pepper-lite {
+	color: #8d8a72;
+}
+.lipstick {
+	color: #c20c0c;
+}

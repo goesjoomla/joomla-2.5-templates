@@ -1,0 +1,226 @@
+/**
+ * GoesJoomla CSS framework.
+ *
+ * Resets browser's default style.
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+/* Common
+-----------------------------------------------------------------------------------------------*/
+
+a, abbr, acronym, address, applet, article, aside, audio,
+b, big, blockquote, body,
+canvas, caption, center, cite, code,
+dd, del, details, dfn, dialog, div, dl, dt,
+em, embed,
+fieldset, figcaption, figure, font, footer, form,
+h1, h2, h3, h4, h5, h6, header, hgroup, hr, html,
+i, iframe, img, ins,
+kbd,
+label, legend, li,
+mark, menu, meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q,
+rp, rt, ruby,
+s, samp, section, small, span, strike, strong, sub, summary, sup,
+table, tbody, td, tfoot, th, thead, time, tr, tt,
+u, ul,
+var, video,
+xmp {
+	outline: 0;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background: transparent;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	vertical-align: baseline;
+}
+
+article, aside,
+details, dialog,
+figcaption, figure, footer,
+header, hgroup,
+menu,
+nav,
+section {
+	/*
+	* Override the default (display: inline) for
+	* browsers that do not recognize HTML5 tags.
+	*
+	* IE8 (and lower) requires a shiv:
+	* http://ejohn.org/blog/html5-shiv
+	*/
+	display: block;
+}
+
+html, body {
+	height: 100%;
+}
+body {
+	font-size: 75%;
+	line-height: 1.5em;
+}
+
+b, strong {
+	/*
+	* Makes browsers agree.
+	* IE + Opera = font-weight: bold.
+	* Gecko + WebKit = font-weight: bolder.
+	*/
+	font-weight: bold;
+}
+
+img {
+	font-size: 0;
+	/*
+	* For IE.
+	* http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+	*/
+	-ms-interpolation-mode: bicubic;
+}
+a img {
+	border: 0;
+}
+
+li {
+	/*
+	* For IE6 + IE7.
+	*/
+	display: list-item;
+}
+
+table {
+	/*
+	* Tables still need 'cellspacing="0"' in the markup.
+	*/
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	float: none;
+}
+table, td, th {
+	vertical-align: middle;
+}
+
+svg {
+	/*
+	* For IE9 beta.
+	*/
+	overflow: hidden;
+}
+
+blockquote:before, blockquote:after {
+	content: "";
+}
+blockquote {
+	quotes: "" "";
+}
+q {
+	quotes: "“" "”";
+}
+
+/*
+* Focus styles.
+*/
+:focus {
+	outline: 0;
+}
+
+/* CSS3 Features
+----------------------------------------------------------------------------------------------------*/
+
+.transition-fx {
+	-webkit-transition: all 0.5s ease-out; 
+	   -moz-transition: all 0.5s ease-out; 
+	    -ms-transition: all 0.5s ease-out; 
+	     -o-transition: all 0.5s ease-out; 
+	        transition: all 0.5s ease-out;
+}
+.transition-fx.position {
+	-webkit-transition-property: top, right, bottom, left, opacity; 
+	   -moz-transition-property: top, right, bottom, left, opacity; 
+	    -ms-transition-property: top, right, bottom, left, opacity; 
+	     -o-transition-property: top, right, bottom, left, opacity; 
+	        transition-property: top, right, bottom, left, opacity;
+}
+.transition-fx.dimension {
+	-webkit-transition-property: width, height, opacity; 
+	   -moz-transition-property: width, height, opacity; 
+	    -ms-transition-property: width, height, opacity; 
+	     -o-transition-property: width, height, opacity; 
+	        transition-property: width, height, opacity;
+}
+
+/* Floating
+-----------------------------------------------------------------------------------------------*/
+
+.f-left {
+	float: left;
+}
+.f-right {
+	float: right;
+}
+.f-none {
+	float: none;
+}
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before, .clearfix:after {
+	content: "\0020";
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	/*
+	* The following zoom:1 rule is specifically for IE6 + IE7.
+	* Move to separate stylesheet if invalid CSS is a problem.
+	*/
+	zoom: 1;
+}
+
+/* Visually Hiding Content
+----------------------------------------------------------------------------------------------------*/
+
+/* http://designfestival.com/when-and-how-to-visually-hide-content */
+.hidden {
+	position: absolute;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE7- */
+	clip: rect(1px, 1px, 1px, 1px);
+}
