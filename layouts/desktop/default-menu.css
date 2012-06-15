@@ -1,0 +1,192 @@
+/**
+ * GoesJoomla template framework.
+ *
+ * Declares module styles for desktop layout's default theme.
+ *
+ * @copyright	Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.
+ * @author		Manh-Cuong Nguyen <cuongnm@goesjoomla.com>
+ * @license		Visit http://www.goesjoomla.com/licenses.html for details.
+ * @link		http://www.goesjoomla.com/templates.html
+ */
+
+/**
+ * Button Menus
+ */
+ul.gj-button-menu { /* root list */
+	margin: 0 auto;
+	height: 34px;
+	overflow: hidden;
+}
+
+/* root list items */
+ul.gj-button-menu li {
+	margin-right: -11px;
+}
+ul.gj-button-menu li a {
+	margin-left: 36px;
+	padding-right: 24px;
+	background: url(../../images/background-sprite.png) 100% -106px no-repeat;
+}
+ul.gj-button-menu li a span {
+	display: block;
+	margin-left: -36px;
+	padding-left: 24px;
+	height: 34px;
+	background: url(../../images/background-sprite.png) 0 -72px no-repeat;
+	color: #e8e8e8;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+/* hovered/active root list item */
+ul.gj-button-menu li:hover a,
+ul.gj-button-menu li.mouseover a,
+ul.gj-button-menu li.active a {
+	position: relative;
+	background-position: 100% -174px;
+	text-decoration: none;
+}
+ul.gj-button-menu li:hover a span,
+ul.gj-button-menu li.mouseover a span,
+ul.gj-button-menu li.active a span {
+	background-position: 0 -140px;
+	color: #de6400;
+}
+
+/* root list item that has sub-menu */
+ul.gj-button-menu li.parent a span:after {
+	float: right;
+	margin: 17px 0 0 5px;
+	width: 7px;
+	height: 6px;
+	background: url(../../images/background-sprite.png) -338px -223px no-repeat;
+	content: '';
+}
+ul.gj-button-menu li.parent:hover a span:after,
+ul.gj-button-menu li.parent.mouseover a span:after,
+ul.gj-button-menu li.parent.active a span:after {
+	background-position: -301px -223px;
+}
+
+ul.gj-button-menu ul { /* second level and above lists */
+	-webkit-border-radius: 0 0 6px 6px;
+	   -moz-border-radius: 0 0 6px 6px;
+	        border-radius: 0 0 6px 6px;
+
+	padding: 0 2px 2px;
+
+	background-color: transparent;
+	background-color: rgba(99, 99, 99, 0.5);
+	          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F636363,endColorstr=#7F636363);
+	            zoom: 1;
+}
+
+/* second level and above list items */
+ul.gj-button-menu ul li {
+	border-bottom: 1px solid #BDBCB8;
+	padding-bottom: 1px;
+	background-color: #E1E0DD;
+}
+ul.gj-button-menu ul li:last-child {
+	border: 0;
+
+	-webkit-border-radius: inherit;
+	   -moz-border-radius: inherit;
+	        border-radius: inherit;
+
+	padding: 0;
+}
+
+/* links of second level and above list items */
+ul.gj-button-menu ul li a,
+ul.gj-button-menu ul ul li a,
+ul.gj-button-menu ul li:hover li a,
+ul.gj-button-menu ul li.mouseover li a,
+ul.gj-button-menu ul li.active li a,
+ul.gj-button-menu ul ul ul li a,
+ul.gj-button-menu ul ul li:hover li a,
+ul.gj-button-menu ul ul li.mouseover li a,
+ul.gj-button-menu ul ul li.active li a {
+	margin: 0;
+	padding: 0;
+
+	-webkit-border-radius: inherit;
+	   -moz-border-radius: inherit;
+	        border-radius: inherit;
+
+	background: #D4D3CF;
+}
+ul.gj-button-menu ul li:hover a,
+ul.gj-button-menu ul li.mouseover a,
+ul.gj-button-menu ul li.active a,
+ul.gj-button-menu ul ul li:hover a,
+ul.gj-button-menu ul ul li.mouseover a,
+ul.gj-button-menu ul ul li.active a,
+ul.gj-button-menu ul ul ul li:hover a,
+ul.gj-button-menu ul ul ul li.mouseover a,
+ul.gj-button-menu ul ul ul li.active a {
+		background-color: #c4c3bf;
+}
+ul.gj-button-menu ul li a span,
+ul.gj-button-menu li:hover li a span,
+ul.gj-button-menu li.mouseover li a span,
+ul.gj-button-menu li.active li a span {
+	margin: 0;
+	padding: 0 12px;
+	height: auto;
+	background: none;
+	color: #000;
+	font-weight: normal;
+	line-height: 30px;
+}
+ul.gj-button-menu li.parent li a span:after,
+ul.gj-button-menu li.parent:hover li a span:after,
+ul.gj-button-menu li.parent.mouseover li a span:after,
+ul.gj-button-menu li.parent.active li a span:after,
+ul.gj-button-menu li:hover li.parent li a span:after,
+ul.gj-button-menu li.mouseover li.parent li a span:after,
+ul.gj-button-menu li li:hover li.parent li a span:after,
+ul.gj-button-menu li li.mouseover li.parent li a span:after {
+	display: none;
+}
+
+/* second level and above list item that has sub-menu */
+ul.gj-button-menu li:hover li.parent a span:after,
+ul.gj-button-menu li.mouseover li.parent a span:after,
+ul.gj-button-menu li li:hover li.parent a span:after,
+ul.gj-button-menu li li.mouseover li.parent a span:after {
+	display: block;
+	margin-top: 13px;
+
+	-webkit-transform: rotate(-90deg); 
+	   -moz-transform: rotate(-90deg); 
+	    -ms-transform: rotate(-90deg); 
+	     -o-transform: rotate(-90deg); 
+	        transform: rotate(-90deg);
+	           filter: progid:DXImageTransform.Microsoft.Matrix(M11=6.123233995736766e-17, M12=1, M21=-1, M22=6.123233995736766e-17, sizingMethod='auto expand');
+	             zoom: 1;
+
+	background-position: -316px -223px;
+}
+
+ul.gj-button-menu ul ul { /* third level and above lists */
+	margin: -24px 0 0 14.5em;
+
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+
+	padding: 2px;
+}
+
+/* third level and above list items */
+ul.gj-button-menu ul ul li:first-child {
+	-webkit-border-radius: 6px 6px 0 0;
+	   -moz-border-radius: 6px 6px 0 0;
+	        border-radius: 6px 6px 0 0;
+}
+ul.gj-button-menu ul ul li:last-child {
+	-webkit-border-radius: 0 0 6px 6px;
+	   -moz-border-radius: 0 0 6px 6px;
+	        border-radius: 0 0 6px 6px;
+}

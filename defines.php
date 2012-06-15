@@ -17,7 +17,7 @@ defined('_JEXEC') or die;
 $this->params->def('gj_demo_full_layout',	1);
 
 // Declares parameters for logo generation.
-$this->params->def('gj_logo',			'templates/GJ_Framework/images/logo.png');
+$this->params->def('gj_logo',			'templates/GJ_Cereus/images/logo.png');
 $this->params->def('gj_logo_title',		$this->title);
 $this->params->def('gj_logo_slogan',	JText::_('TPL_GJ_ENTER_YOUR_SLOGAN_HERE'));
 $this->params->def('gj_logo_inject',	'if-empty');

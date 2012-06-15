@@ -13,7 +13,7 @@
 -->
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" client="site">
-	<name>GJ_Framework</name>
+	<name>GJ_Cereus</name>
 	<creationDate>04 April 2012</creationDate>
 	<author>Manh-Cuong Nguyen</author>
 	<authorEmail>cuongnm@goesjoomla.com</authorEmail>
@@ -21,7 +21,7 @@
 	<copyright>Copyright (C) 2012 Manh-Cuong Nguyen. All rights reserved.</copyright>
 	<license>Visit http://www.goesjoomla.com/licenses.html for details</license>
 	<version>1.0</version>
-	<description>TPL_GJ_FRAMEWORK_XML_DESCRIPTION</description>
+	<description>TPL_GJ_CEREUS_XML_DESCRIPTION</description>
 
 	<files>
 		<folder>assets</folder>
@@ -90,7 +90,7 @@
 		<language tag="en-GB">en-GB/en-GB.tpl_GJ.sys.ini</language>
 	</languages>
 
-	<config addfieldpath="/templates/GJ_Framework/libraries/joomla/form/fields">
+	<config addfieldpath="/templates/GJ_Cereus/libraries/joomla/form/fields">
 		<fields name="params">
 			<fieldset name="ABOUT">
 				<field name="gj_about" type="spacer" label="TPL_GJ_ABOUT_TEMPLATE" />
@@ -109,7 +109,7 @@
 			</fieldset>
 
 			<fieldset name="LOGO">
-				<field name="gj_logo" type="text" default="templates/GJ_Framework/images/logo.png" filter="string"
+				<field name="gj_logo" type="text" default="templates/GJ_Cereus/images/logo.png" filter="string"
 					label="TPL_GJ_FIELD_LOGO_LABEL" description="TPL_GJ_FIELD_LOGO_DESC" />
 
 				<field name="gj_logo_title" type="text" default="" filter="string"
@@ -153,7 +153,7 @@
 			</fieldset>
 
 			<fieldset name="DESKTOP_LAYOUT">
-				<field name="gj_desktop_theme" type="filelist" directory="templates/GJ_Framework/layouts/desktop"
+				<field name="gj_desktop_theme" type="filelist" directory="templates/GJ_Cereus/layouts/desktop"
 					filter="\.php$" exclude="default.php" stripext="1" hide_none="1"
 					label="TPL_GJ_FIELD_DESKTOP_THEME_LABEL" description="TPL_GJ_FIELD_DESKTOP_THEME_DESC" />
 

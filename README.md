@@ -1,5 +1,5 @@
-GoesJoomla template framework for Joomla 2.5 series
-===================================================
+Sample Joomla 2.5 template created based on GoesJoomla template framework
+=========================================================================
 
 Hello everybody,
 

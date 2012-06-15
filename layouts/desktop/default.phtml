@@ -62,7 +62,7 @@ $class = implode(' ', $class);
 				$class = $status->hasPersonalizePos ? ' class="f-left gj-left-column"' : ''; ?>
 				<div id="gj-logo-pos"<?php echo $class; ?>>
 <?php
-					GJTemplate::inject('logo'); ?>
+					GJTemplate::inject('logo', 'raw'); ?>
 				</div>
 <?php
 			endif;
@@ -71,7 +71,7 @@ $class = implode(' ', $class);
 				$class = $status->hasLogoPos ? ' class="f-right gj-wide-right-column"' : ''; ?>
 				<div id="gj-personalize-pos"<?php echo $class; ?>>
 <?php
-					GJTemplate::inject('personalize'); ?>
+					GJTemplate::inject('personalize', 'raw'); ?>
 				</div>
 <?php
 			endif;
@@ -80,10 +80,10 @@ $class = implode(' ', $class);
 				<div id="gj-menu-ground" class="clearfix">
 <?php
 				if ($status->hasMenuLeftPos) :
-					$class = $status->hasMenuRightPos ? ' class="f-left gj-wide-left-column"' : ''; ?>
+					$class = ' class="f-left '.($status->hasMenuRightPos ? 'gj-center-column' : 'gj-center-column gj-wide-right-column').'"'; ?>
 					<div id="gj-menu-left-pos"<?php echo $class; ?>>
 <?php
-						GJTemplate::inject('menu-left'); ?>
+						GJTemplate::inject('menu-left', 'raw'); ?>
 					</div>
 <?php
 				endif;
@@ -92,7 +92,7 @@ $class = implode(' ', $class);
 					$class = $status->hasMenuLeftPos ? ' class="f-right gj-right-column"' : ''; ?>
 					<div id="gj-menu-right-pos"<?php echo $class; ?>>
 <?php
-						GJTemplate::inject('menu-right'); ?>
+						GJTemplate::inject('menu-right', 'raw'); ?>
 					</div>
 <?php
 				endif; ?>
@@ -123,7 +123,7 @@ $class = implode(' ', $class);
 					} ?>
 					<div id="gj-promo-left-pos"<?php echo $class; ?>>
 <?php
-						GJTemplate::inject('promo-left'); ?>
+						GJTemplate::inject('promo-left', 'GJModule', 'class-suffix="-rounded-box invert-color black-ground sticker-heading"'); ?>
 					</div>
 <?php
 				endif;
@@ -144,7 +144,7 @@ $class = implode(' ', $class);
 					} ?>
 					<div id="gj-promo-pos"<?php echo $class; ?>>
 <?php
-						GJTemplate::inject('promo'); ?>
+						GJTemplate::inject('promo', 'GJModule', 'class-suffix="-rounded-box invert-color black-ground" hide-heading="1"'); ?>
 					</div>
 <?php
 				endif;
@@ -161,7 +161,7 @@ $class = implode(' ', $class);
 					} ?>
 					<div id="gj-promo-right-pos"<?php echo $class; ?>>
 <?php
-						GJTemplate::inject('promo-right'); ?>
+						GJTemplate::inject('promo-right', 'GJModule', 'class-suffix="-rounded-box invert-color black-ground"'); ?>
 					</div>
 <?php
 				endif; ?>
@@ -173,7 +173,7 @@ $class = implode(' ', $class);
 			if ($status->hasContentTopPos) : ?>
 				<div id="gj-content-top-pos" class="clearfix split-<?php echo min(array(5, $status->hasContentTopPos)); ?>">
 <?php
-					GJTemplate::inject('content-top', 'GJModule', 'is-horizontal="1"'); ?>
+					GJTemplate::inject('content-top', 'GJModule', 'class-suffix="-rounded-box" is-horizontal="1"'); ?>
 				</div>
 <?php
 			endif; ?>
@@ -200,7 +200,7 @@ $class = implode(' ', $class);
 				{
 					$class = ' class="f-left gj-wide-left-column"';
 				} ?>
-				<div id="gj-center-ground"<?php echo $class; ?>>
+				<div id="gj-center-ground"<?php echo $class; ?>><div class="gj-module-ground gj-module-ground-rounded-box first last"><div class="gj-module gj-module-rounded-box first last"><div class="clearfix gj-module-content gj-module-content-rounded-box first last">
 <?php
 				if ($status->hasBodyBlock) :
 					$class = '';
@@ -346,7 +346,7 @@ $class = implode(' ', $class);
 					</div>
 <?php
 				endif; ?>
-				</div>
+				</div></div></div></div>
 <?php
 			endif;
 
@@ -362,7 +362,7 @@ $class = implode(' ', $class);
 				} ?>
 				<div id="gj-left-pos"<?php echo $class; ?>>
 <?php
-					GJTemplate::inject('left'); ?>
+					GJTemplate::inject('left', 'GJModule', 'class-suffix="-rounded-box invert-color gray-ground sticker-heading"'); ?>
 				</div>
 <?php
 			endif;
@@ -379,7 +379,7 @@ $class = implode(' ', $class);
 				} ?>
 				<div id="gj-right-pos"<?php echo $class; ?>>
 <?php
-					GJTemplate::inject('right'); ?>
+					GJTemplate::inject('right', 'GJModule', 'class-suffix="-rounded-box invert-color black-ground cyan-heading"'); ?>
 				</div>
 <?php
 			endif; ?>
@@ -395,7 +395,7 @@ $class = implode(' ', $class);
 			if ($status->hasContentBottomPos) : ?>
 				<div id="gj-content-bottom-pos" class="clearfix split-<?php echo min(array(5, $status->hasContentBottomPos)); ?>">
 <?php
-					GJTemplate::inject('content-bottom', 'GJModule', 'is-horizontal="1"'); ?>
+					GJTemplate::inject('content-bottom', 'GJModule', 'class-suffix="+invert-color" is-horizontal="1"'); ?>
 				</div>
 <?php
 			endif;
@@ -410,7 +410,7 @@ $class = implode(' ', $class);
 				if ($status->hasUser5Pos) : ?>
 					<div id="gj-user5-pos" class="column">
 <?php
-						GJTemplate::inject('user5'); ?>
+						GJTemplate::inject('user5', 'GJModule', 'class-suffix="+invert-color"'); ?>
 					</div>
 <?php
 				endif;
@@ -418,7 +418,7 @@ $class = implode(' ', $class);
 				if ($status->hasUser6Pos) : ?>
 					<div id="gj-user6-pos" class="column">
 <?php
-						GJTemplate::inject('user6'); ?>
+						GJTemplate::inject('user6', 'GJModule', 'class-suffix="+invert-color"'); ?>
 					</div>
 <?php
 				endif;
@@ -426,7 +426,7 @@ $class = implode(' ', $class);
 				if ($status->hasUser7Pos) : ?>
 					<div id="gj-user7-pos" class="column">
 <?php
-						GJTemplate::inject('user7'); ?>
+						GJTemplate::inject('user7', 'GJModule', 'class-suffix="+invert-color"'); ?>
 					</div>
 <?php
 				endif; ?>
@@ -557,7 +557,7 @@ if ($status->hasDebugBlock) :
 
 			for (var i = 0; i < columns.length; i++) {
 				if (body && columns[i]) {
-					$GJ.el.setStyle(columns[i], 'height', (body.offsetHeight - 36) + 'px');
+					$GJ.el.setStyle(columns[i], 'height', body.offsetHeight + 'px');
 				}
 			}
 		})();

@@ -16,7 +16,10 @@ defined('_JEXEC') or die;
 // Adds theme specific stylesheets to document head.
 JHtml::_('stylesheet', 'templates/'.$doc->template.'/css/plugins/layout.css');
 JHtml::_('stylesheet', 'templates/'.$doc->template.'/css/plugins/menu.css');
+
 JHtml::_('stylesheet', 'templates/'.$doc->template.'/layouts/desktop/default.css');
+JHtml::_('stylesheet', 'templates/'.$doc->template.'/layouts/desktop/default-menu.css');
+JHtml::_('stylesheet', 'templates/'.$doc->template.'/layouts/desktop/default-module.css');
 
 if ($params->get('gj_demo_full_layout'))
 {
@@ -100,6 +103,7 @@ $doc->addStyleDeclaration(
 	#gj-left-pos.gj-left-column {
 		left: -'.(100 - (float) $params->get('gj_desktop_left_col_width') - (float) $params->get('gj_desktop_right_col_width')).'%;
 	}
+	#gj-menu-left-pos.gj-center-column,
 	#gj-center-ground.gj-center-column {
 		left: '.(float) $params->get('gj_desktop_left_col_width').'%;
 	}
